@@ -1,0 +1,26 @@
+body {
+background-color: cadetblue;
+}
+.animation {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50px;
+    animation: cubicTravel 20s linear infinite;
+}
+
+@keyframes cubicTravel {
+    0%, 100% {
+         background-color: red; transform:  translateX(0) translateY(0) translateZ(0);
+      }
+      25% {
+       background-color: cadetblue; transform: translateX(1500px) translateY(750px) translateZ(400px);
+      }
+      50% {
+       background-color: aquamarine; transform: translateX(300px) translateY(900) translateZ(1000);
+      }
+      75% {
+         background-color: purple; translateX(500px) translateY(200px) translateZ(200px);
+      }
+    
+}
